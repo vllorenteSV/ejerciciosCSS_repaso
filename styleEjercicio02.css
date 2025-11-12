@@ -1,22 +1,21 @@
 .container{
     margin: auto;
-    max-width: 300px;
+    max-width: 250px;
     box-shadow: 3px 3px 15px rgb(196, 196, 196)
 }
 
-.image{
+.image_space{
     display: flex;
     flex-direction: column;
 }
 
-.font{
+.font_space{
     padding: 1rem;
     font-family: "Roboto", sans-serif;
     font-style: normal;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .title_size{
     font-size: 20px;
 }
+
