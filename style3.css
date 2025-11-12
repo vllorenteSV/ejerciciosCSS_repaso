@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6e2e2;                
+  display: flex;
+  justify-content: center;         /* centra horizontalmente los elementos*/
+  align-items: center;              /*centro los elementos verticualmentte de arrinba abajo*/
+  padding: 70px;                    /*aplica 50px en todos los lados*/
+}
+
+.perfil {
+  background-color: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);              /*por costados y difuminacion*/
+  text-align: center;
+  max-width: 400px;               /*no podra hacerse mas ancho de 400px*/
+  width: 90%;                       
+}
+.edit-img{
+  border-radius: 100%;  /*para redondear img*/
+}
+.perfil-img {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;                  /*centra y deja espacio debajo */
+  border: 4px solid #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);             /*por costados y difuminacion*/
+}
+
+.perfil h3 {
+  margin: 0;
+  font-size: 1.4em;
+  color: #333;
+}
+
+.perfil h4 {
+  margin: 5px 0 0  15px;
+  color: #777;
+  font-weight: normal;
+}
+
+.perfil p {
+  font-size: 0.95em;
+  color: #555;                   /*gris oscuro*/
+  margin-bottom: 20px;
+}
+
+.perfil-iconos{
+  text-align: center;  /* Centra los iconos */
+  display: flex;
+  justify-content: space-around;
+  margin: 0 30px;
+
+}
