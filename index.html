@@ -1,35 +1,86 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Ejercicios Laboratorio Unidad 4">
-  <meta name="author" content="Diego Puértolas Ruiz">
-  <title>Ejercicio 1</title>
-  
-  <link rel="stylesheet" href="style.css">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recreación de Diseño</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <button class="create-btn">+ Crear</button>
+      <div class="header-icons">
+        <span class="material-icons">meeting_room</span>
+        <span class="material-icons">calendar_today</span>
+        <span>Carpeta de Drive de la clase</span>
+        <span class="material-icons more-options">more_vert</span>
+      </div>
+    </header>
 
-  <!-- Roboto -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="card">
-    <div class="card-header">
-      <p>Normal message</p>
-      <span>
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
-          <path d="M17.8,15.1L11.6,9l6.2-6.1c0.3-0.3,0.3-0.7,0-0.9l-1.8-1.8C15.9,0.1,15.8,0,15.6,0c-0.2,0-0.3,0.1-0.5,0.2L9,6.3L2.9,0.2
-          C2.7,0.1,2.6,0,2.4,0C2.2,0,2.1,0.1,1.9,0.2L0.2,2c-0.3,0.3-0.3,0.7,0,0.9L6.4,9l-6.1,6.2C0.1,15.2,0,15.4,0,15.6
-          c0,0.2,0.1,0.3,0.2,0.5L2,17.8C2.1,17.9,2.3,18,2.4,18c0.2,0,0.3-0.1,0.5-0.2L9,11.7l6.1,6.1c0.1,0.1,0.3,0.2,0.5,0.2
-          c0.2,0,0.3-0.1,0.5-0.2l1.8-1.8c0.1-0.1,0.2-0.3,0.2-0.5C18,15.4,17.9,15.2,17.8,15.1z"/>
-        </svg>
-      </span>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="sidebar-item active-topic">Todos los temas</div>
+        <div class="sidebar-item">Retos</div>
+        <div class="sidebar-item">Labs.</div>
+        <hr />
+        <div class="sidebar-item main-guide">Guía de la asignatura</div>
+        <div class="sidebar-item">U0. Introducción</div>
+        <div class="sidebar-item">U1. Diseño centrado...</div>
+        <div class="sidebar-item">U2. Diseño interfaz ...</div>
+        <div class="sidebar-item">U3. HTML</div>
+        <div class="sidebar-item">U4. CSS</div>
+      </aside>
+
+      <main class="content">
+        <section class="section">
+          <div class="section-header">
+            <h1>Retos</h1>
+            <span class="material-icons more-options">more_vert</span>
+          </div>
+          <div class="item pink-item">
+            <span class="material-icons item-icon">assignment</span>
+            <span class="item-title">Reto 1ª evaluación</span>
+            <span class="item-date">Fecha de entrega: 10 dic 202...</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-header">
+            <h1>Labs.</h1>
+            <span class="material-icons more-options">more_vert</span>
+          </div>
+          <div class="item pink-item">
+            <span class="material-icons item-icon">assignment</span>
+            <span class="item-title">Laboratorio Unidad 0</span>
+            <span class="item-date">Fecha de entrega: 14 oct 2020</span>
+          </div>
+          <div class="item pink-item">
+            <span class="material-icons item-icon">assignment</span>
+            <span class="item-title"
+              >Laboratorio Unidad 1 <span class="badge">1</span></span
+            >
+            <span class="item-date">Fecha de entrega: 10 nov 20...</span>
+          </div>
+          <div class="item grey-item">
+            <span class="material-icons item-icon">assignment</span>
+            <span class="item-title">Laboratorio Unidad 2</span>
+            <span class="item-status">Borrador</span>
+          </div>
+          <div class="item pink-item">
+            <span class="material-icons item-icon">assignment</span>
+            <span class="item-title">Laboratorio Unidad 3</span>
+            <span class="item-status published-date">Publicado el 13 ene</span>
+          </div>
+        </section>
+      </main>
     </div>
-    <div class="card-message">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus.
-    </div>
-  </div>  
-</body>
+  </body>
 </html>

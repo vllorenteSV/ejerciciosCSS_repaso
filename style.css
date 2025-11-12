@@ -1,89 +1,192 @@
+:root {
+  --color-primary: #ec407a;
+  --color-background: #fff;
+  --color-text-main: #3c4043;
+  --color-text-secondary: #5f6368;
+  --color-border: #dadce0;
+  --color-hover: #f1f3f4;
+  --color-grey-item: #f8f8f8;
+}
+
 body {
-  /* Hacemos que el body ocupe el 100% de la altura y ancho de la pantalla */
-  height: 100vh;
-  width: 100vw;
-
-  /* Quitamos el margen por defecto */
-  margin: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   font-family: "Roboto", sans-serif;
-
-  background-color: lightsteelblue;
-}
-
-.card {
-  max-width: 480px;
-
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0, 1);
-
-  /* Ajusta a los hijos dentro del borde del contenedor padre */
-  overflow: hidden;
-}
-
-.card-header {
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-
-  padding: 12px 16px;
-
-  background-color: rgb(70, 70, 70);
-}
-
-.card-header p {
-  color: white;
-  font-weight: 500;
-
   margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text-main);
 }
 
-.card-header span {
+.header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--color-border);
+}
 
-  width: 20px;
-  height: 20px;
+.create-btn {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
 
-  background-color: rgb(50, 50, 50);
+.create-btn:hover {
+  background-color: #d81b60; /* Tono más oscuro al hacer hover */
+}
 
-  border-radius: 50%;
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
 
+.header-icons .material-icons {
+  font-size: 24px;
   cursor: pointer;
 }
 
-.card-header span svg {
-  width: 10px;
-  height: 10px;
+.header-icons .more-options {
+  color: var(--color-text-main);
+  font-size: 20px;
 }
 
-.card-header span svg path {
-  fill: white;
+/* Contenedor principal con Flexbox */
+.container {
+  display: flex;
+  min-height: calc(100vh - 50px); /* Ocupar el resto de la altura */
 }
 
-.card-message {
-  background-color: rgb(208, 208, 208);
-  color: rgb(65, 65, 65);
-  line-height: 1.5;
-
-  padding: 20px;
+/* Menú lateral (Sidebar) */
+.sidebar {
+  width: 250px;
+  padding: 10px 0;
+  border-right: 1px solid var(--color-border);
+  flex-shrink: 0; /* Evita que se encoja */
 }
 
-.card-message strong {
-  color: rgb(70, 70, 70);
+.sidebar-item {
+  padding: 10px 20px 10px 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: var(--color-text-secondary);
 }
 
-.card-message a {
-  text-decoration: underline;
+.sidebar-item:hover:not(.active-topic) {
+  background-color: var(--color-hover);
 }
 
-.card-message em {
-  font-style: italic;
+.active-topic {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.main-guide {
+  margin-top: 15px;
+  color: var(--color-text-main);
+  font-weight: 500;
+}
+
+.sidebar hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 10px 20px;
+}
+
+/* Contenido principal (Main Content) */
+.content {
+  flex-grow: 1;
+  padding: 20px 40px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.section-header h1 {
+  font-size: 28px;
+  color: var(--color-text-main);
+  font-weight: 400;
+  margin: 0;
+}
+
+.section-header .material-icons {
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+
+/* Ítems (Retos/Laboratorios) */
+.item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Sombra muy sutil */
+  transition: background-color 0.2s;
+}
+
+.item:hover {
+  background-color: var(--color-hover);
+}
+
+.item-icon {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.pink-item .item-icon {
+  color: var(--color-primary);
+}
+
+.item-title {
+  flex-grow: 1; /* Ocupa el espacio restante */
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.item-date,
+.item-status {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  white-space: nowrap; /* Evita que la fecha se divida */
+}
+
+.grey-item {
+  background-color: var(--color-grey-item);
+  border-left: 5px solid var(--color-text-secondary); /* Borde lateral gris para "Borrador" */
+}
+
+.grey-item .item-icon {
+  color: var(--color-text-secondary);
+}
+
+.item .badge {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.published-date {
+  color: var(--color-primary);
+  font-weight: 500;
 }
