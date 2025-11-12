@@ -186,3 +186,18 @@ body {
   padding: 10px 8px;
   border-radius: 7px;
 }
+@media (max-width: 768px) {
+
+aside{
+  display: none;
+}
+
+.header-icons p{
+  display: none;
+
+}
+
+.select-input{
+  display:block;
+}
+}
