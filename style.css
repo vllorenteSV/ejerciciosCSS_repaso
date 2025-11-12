@@ -1,0 +1,23 @@
+.contenedor {
+    display: flex;
+    height: 600px;
+    gap: 5px;
+    padding: 25px;
+}
+
+.caja-verde {
+    background-color: lightgreen;
+    flex: 1;
+    border: 2px solid black;
+}
+.caja-roja {
+    background-color: lightseagreen;
+    flex: 1;
+    border: 2px solid black;
+}
+
+.caja-amarilla {
+    background-color: lightsalmon;
+    flex: 1;
+    border: 2px solid black;
+}
