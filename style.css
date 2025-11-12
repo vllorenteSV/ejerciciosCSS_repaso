@@ -38,14 +38,14 @@ body {
   background-color: rgb(70, 70, 70);
 }
 
-.card-header p {
+.card-header-title {
   color: white;
   font-weight: 500;
   
   margin: 0;
 }
 
-.card-header span {
+.card-header-icon-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,12 +60,12 @@ body {
   cursor: pointer;
 }
 
-.card-header span svg {
+.card-header-icon-svg {
   width: 10px;
   height: 10px;
 }
 
-.card-header span svg path {
+.card-header-icon-path {
   fill: white;
 }
 
@@ -77,14 +77,29 @@ body {
   padding: 20px;
 }
 
-.card-message strong {
+.card-message-strong {
   color: rgb(70, 70, 70)
 }
 
-.card-message a {
+.card-message-a {
   text-decoration: underline;
 }
 
-.card-message em {
+.card-message-em {
   font-style: italic;
+}
+
+/* ===== DISEÑO MOVIL ===== */
+
+@media (max-width: 768px) {
+  
+  .card {
+
+    /* Anulamos el max-width: 480px de la versión de escritorio. */
+    max-width: none;
+
+    width: 100vw;
+
+  }
+
 }
