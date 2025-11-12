@@ -1,90 +1,10 @@
-body {
-  /* Hacemos que el body ocupe el 100% de la altura y ancho de la pantalla */
-  height: 100vh;
-  width: 100vw;
-
-  /* Quitamos el margen por defecto */
-  margin: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-family: 'Roboto', sans-serif;
-
-  background-color: lightsteelblue;
-}
-
-.card {
-
-  max-width: 480px;
-
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0,1);
-  
-  /* Ajusta a los hijos dentro del borde del contenedor padre */
-  overflow: hidden;
-}
-
-.card-header {
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-
-  padding: 12px 16px;
-
-  background-color: rgb(70, 70, 70);
-}
-
-.card-header p {
-  color: white;
-  font-weight: 500;
-  
-  margin: 0;
-}
-
-.card-header span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 20px;
-  height: 20px;
-
-  background-color: rgb(50, 50, 50);
-
-  border-radius: 50%;
-
-  cursor: pointer;
-}
-
-.card-header span svg {
-  width: 10px;
-  height: 10px;
-}
-
-.card-header span svg path {
-  fill: white;
-}
-
-.card-message {
-  background-color: rgb(208, 208, 208);
-  color: rgb(65, 65, 65);
-  line-height: 1.5;
-
-  padding: 20px;
-}
-
-.card-message strong {
-  color: rgb(70, 70, 70)
-}
-
-.card-message a {
-  text-decoration: underline;
-}
-
-.card-message em {
-  font-style: italic;
+/* Paleta de colores extraída */
+:root {
+  --color-primary: #ec407a;
+  --color-background: #fff;
+  --color-text-main: #3c4043;
+  --color-text-secondary: #5f6368;
+  --color-border: #dadce0;
+  --color-hover: #f1f3f4;
+  --color-grey-item: #f8f8f8;
 }
