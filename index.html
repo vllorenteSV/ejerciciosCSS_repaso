@@ -10,29 +10,17 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header class="header">
-      <button class="create-btn">+ Crear</button>
-      <div class="header-icons">
-        <span class="material-icons">video_camera_back</span>
-        <p>Meet</p>
-        <span class="material-icons">calendar_today</span>
-        <p>Google Calendar</p>
-        <span class="material-icons">add_to_drive</span>
-        <p>Carpeta de Drive de la clase</p>
-      </div>
-    </header>
     <div class="container">
       <aside class="sidebar">
         <div class="sidebar-item active-topic">Todos los temas</div>
         <div class="sidebar-item">Retos</div>
         <div class="sidebar-item">Labs.</div>
-        <hr />
-        <div class="sidebar-item main-guide">Guía de la asignatura</div>
+        <div class="sidebar-item">Guía de la asignatura</div>
         <div class="sidebar-item">U0. Introducción</div>
         <div class="sidebar-item">U1. Diseño centrado...</div>
         <div class="sidebar-item">U2. Diseño interfaz ...</div>
@@ -41,6 +29,19 @@
       </aside>
 
       <main class="content">
+        <header class="header">
+          <button class="create-btn">
+            <span class="material-icons">add</span> Crear
+          </button>
+          <div class="header-icons">
+            <span class="material-icons">video_camera_back</span>
+            <p>Meet</p>
+            <span class="material-icons">calendar_today</span>
+            <p>Google Calendar</p>
+            <span class="material-icons">add_to_drive</span>
+            <p>Carpeta de Drive de la clase</p>
+          </div>
+        </header>
         <section class="section">
           <div class="section-header">
             <h1>Retos</h1>
@@ -78,7 +79,7 @@
           <div class="item pink-item">
             <span class="material-icons item-icon">assignment</span>
             <span class="item-title">Laboratorio Unidad 3</span>
-            <span class="item-status published-date">Publicado el 13 ene</span>
+            <span class="item-status">Publicado el 13 ene</span>
           </div>
         </section>
       </main>
