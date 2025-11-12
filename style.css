@@ -47,6 +47,11 @@ body {
   color: var(--color-text-secondary);
 }
 
+.header-icons p {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
 .header-icons .material-icons {
   font-size: 24px;
   cursor: pointer;
@@ -115,6 +120,12 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.section-header span {
+  color: var(--color-primary);
 }
 
 .section-header h1 {
@@ -189,4 +200,8 @@ body {
 .published-date {
   color: var(--color-primary);
   font-weight: 500;
+}
+
+.section-header h1 {
+  color: var(--color-primary);
 }
