@@ -3,48 +3,48 @@ body {
     padding: 1%;
 }
 
-.cabecera {
-    background-color: #90cac3;
-    border: 1px solid #ffffff;
-    height: 100px;
-    width: 50%;
-}
-
 .contenedor {
-    border: 1px solid rgb(255, 255, 255);
     height: auto;
     width: 55%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
+        "cabecera cabecera cabecera"
         "cubo1 cubo2 barra-lateral"
         "footer footer barra-lateral";
     justify-items: stretch;
+    grid-gap: 1%;
+}
+
+.cabecera {
+    background-color: #90cac3;
+     border: 1px solid #000000;
+    height: 100px;
+    grid-area: cabecera;
 }
 
 .cubo1 {
-    border: 1px solid #ffffff;
+    border: 1px solid #000000;
     background-color: #568bed;
     height: 250px;
     grid-area: cubo1;
 }
 
 .cubo2 {
-    border: 1px solid #ffffff;
+    border: 1px solid #000000;
     background-color: #6c47d8;
     grid-area: cubo2;
 }
 
 .barra-lateral{
-    border: 1px solid #ffffff;
+     border: 1px solid #000000;
     background-color: #ba7593;
-    width: 72%;
     grid-area: barra-lateral;
 }
 
 .footer {
-    border: 1px solid #ffffff;
+    border: 1px solid #000000;
     background-color: #ecc48e;
     grid-area: footer;
     height: 100px;
