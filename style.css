@@ -1,0 +1,122 @@
+body {
+    font-family: M;
+    color: #009ddb;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-weight: normal;
+    margin-bottom: 45px;
+}
+
+h2 {
+    font-weight: normal;
+    line-height: 0%;
+}
+
+a {
+    color: black;
+}
+
+.correos {
+    text-decoration: none;
+    color: #009ddb;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100vh;
+    grid-template-areas:
+        "informacion formulario";
+    margin-left: 30px;
+}
+
+.ïnformacion {
+    grid-area: informacion;
+}
+
+.formulario {
+    grid-area: formulario;
+    display: flex;
+    justify-content: center;
+}
+
+.NyP {
+    margin-top: 30px;
+    width: 90%;
+    padding: 18px;
+    font-size: 14px;
+    background-color: rgb(238, 238, 238);
+    border-color: white;
+    border-radius: 40px;
+    font-style: italic;
+    border: none;
+}
+
+.corta {
+    margin-top: 20px;
+    width: 40%;
+    padding: 18px;
+    font-size: 14px;
+    background-color: rgb(238, 238, 238);
+    border-color: white;
+    border-radius: 40px;
+    font-style: italic;
+    border: none;
+}
+
+.asunto {
+    margin-top: 20px;
+    width: 90%;
+    padding: 18px;
+    font-size: 14px;
+    background-color: rgb(238, 238, 238);
+    border-color: white;
+    border-radius: 40px;
+    font-style: italic;
+    border: none;
+}
+
+.mensaje {
+    margin-top: 20px;
+    font-size: 14px;
+    background-color: rgb(238, 238, 238);
+    border-color: white;
+    border-radius: 30px;
+    font-style: italic;
+    border: none;
+    color: grey;
+}
+
+.espacio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.LCasilla {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.pp {
+    text-decoration: none;
+    color: #009ddb;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.boton {
+    margin-left: 69%;
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(45deg, blue, rgb(161, 208, 235));
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.casillas{
+    margin-right: 55px;
+}
