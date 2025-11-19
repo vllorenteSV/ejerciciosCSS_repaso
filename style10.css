@@ -71,7 +71,7 @@ body {
 .sidebar {
   width: 250px;
   padding: 90px 0;
-  flex-shrink: 0;
+  /* flex-shrink: 0;*/
 }
 
 .sidebar-item {
@@ -187,17 +187,15 @@ body {
   border-radius: 7px;
 }
 @media (max-width: 768px) {
+  aside {
+    display: none;
+  }
 
-aside{
-  display: none;
-}
+  .header-icons p {
+    display: none;
+  }
 
-.header-icons p{
-  display: none;
-
-}
-
-.select-input{
-  display:block;
-}
+  .select-input {
+    display: block;
+  }
 }
