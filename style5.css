@@ -1,0 +1,174 @@
+body {
+    font-family: M;
+    color: #009ddb;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-weight: normal;
+    margin-bottom: 45px;
+}
+
+h2 {
+    font-weight: normal;
+    line-height: 0%;
+}
+
+a {
+    color: black;
+}
+
+.correos {
+    text-decoration: none;
+    color: #009ddb;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 100vh;
+    grid-template-areas:
+        "informacion formulario";
+    margin-left: 30px;
+}
+
+.ïnformacion {
+    grid-area: informacion;
+}
+
+.formulario {
+    grid-area: formulario;
+    display: flex;
+    justify-content: center;
+}
+
+.NyP::placeholder {
+    font-style: italic;
+}
+
+.NyP {
+    margin-top: 30px;
+    width: 90%;
+    padding: 18px;
+    font-size: 14px;
+    background-color: rgb(238, 238, 238);
+    border-color: white;
+    border-radius: 40px;
+    border: none;
+}
+
+.corta::placeholder {
+    font-style: italic;
+}
+
+.corta {
+    margin-top: 20px;
+    width: 40%;
+    padding: 18px;
+    font-size: 14px;
+    background-color: rgb(238, 238, 238);
+    border-color: white;
+    border-radius: 40px;
+    border: none;
+}
+
+.asunto::placeholder {
+    font-style: italic;
+}
+
+.asunto {
+    margin-top: 20px;
+    width: 90%;
+    padding: 18px;
+    font-size: 14px;
+    background-color: rgb(238, 238, 238);
+    border-color: white;
+    border-radius: 40px;
+    border: none;
+}
+
+.mensaje::placeholder {
+    color: rgb(128, 128, 128);
+    font-style: italic;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.mensaje {
+    margin-top: 20px;
+    font-size: 14px;
+    background-color: rgb(238, 238, 238);
+    border-color: white;
+    border-radius: 30px;
+    border: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    padding-left: 18px;
+    padding-top: 20px;
+    resize: none;
+}
+
+.espacio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.LCasilla {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 90px;
+}
+
+.pp {
+    text-decoration: none;
+    color: #009ddb;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.boton {
+    margin-left: 69%;
+    border-radius: 30px;
+    width: 200px;
+    height: 55px;
+    background: linear-gradient(45deg, rgba(0, 0, 255, 0.849), rgb(116, 173, 206));
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-top: 15px;
+}
+
+.casillas{
+    font-weight: bold;
+    font-size: 11px;
+    color: black;
+    margin-top: 15px;
+    max-width: 90%;
+    margin-right: 9px;
+}
+
+.contenedor-checkbox {
+  position: relative;
+}
+.contenedor-checkbox-input { 
+  margin-right: 10px;
+}
+.asterisco {
+  color: red;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.casilla2{
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+    font-size: 11px;
+    margin-top: 15px;
+}
+
+.linea2{
+    margin-left: 30px;
+    font-size: 10px;
+}
