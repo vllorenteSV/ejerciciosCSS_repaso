@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style5.css">
+    <title>Ejercicio5</title>
+    <link rel="stylesheet" href="./style5.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -48,20 +48,26 @@
                 <div class="espacio">
                     <input class="corta" type="email" placeholder="E-mail*" required>
                     <input class="corta" placeholder="Teléfono*" type="tel" required><br>
-                </div>
+                </div><div>
                 <input class="asunto" placeholder="Asunto*" type="text" required><br>
-                <textarea class="mensaje" placeholder="Mensaje*" rows="10" cols="85"></textarea>
-
+                <textarea class="mensaje" placeholder="Mensaje*" rows="10" cols="90"></textarea>
+            </div>
                 <div class="casillas">
-                <input type="checkbox" required><a class="LCasilla"> He leído y acepto la </a><a class="pp"
-                    href="politicaprivacidad.com">Política de privacidad</a>
-                <a class="LCasilla"> del responsable FSV sobre el tratamiento de mis datos<br>
-                    personales con finalidad de atender mi consulta y comunicarse comercialmente por vía
-                    electrónica,</a><br><br>
-                <input type="checkbox"><a class="LCasilla"> Deseo recibir comunicaciones sobre eventos y otra oferta
-                    formativa de FSV por vía electrónica.
-                </a></div><br><br>
+                    <div class="contenedor-checkbox">
+                        <input class="contenedor-checkbox-input" type="checkbox" name="politica" id="">
+                        <span class="asterisco">*</span>
+                        <label for="politica">He leido y acepto la <a class="pp" href="politica.com">POLITICA DE PRIVACIDAD</a> </label>del responsable FSV sobre el tratamiento de mis datos
+                        <div class="linea2" > personales con finalidad de atender mi consulta y comunicarse comercialmente por vía
+                        electrónica.</div>
 
+                    </div>
+                </div>
+
+                
+                <div class="casilla2">
+                    <input type="checkbox"><label for="box2"> Deseo recibir comunicaciones sobre eventos y otra oferta
+                    formativa de FSV por vía electrónica.</label>
+                    </div>
                 <button class="boton">ENVIAR MENSAJE</button>
 
             </form>

@@ -25,7 +25,7 @@ a {
 
 .contenedor {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 35% 65%;
     grid-template-rows: 100vh;
     grid-template-areas:
         "informacion formulario";
@@ -88,8 +88,9 @@ a {
 }
 
 .mensaje::placeholder {
-    color: grey;
+    color: rgb(128, 128, 128);
     font-style: italic;
+    font-family: "Montserrat", sans-serif;
 }
 
 
@@ -101,6 +102,10 @@ a {
     border-radius: 30px;
     border: none;
     color: black;
+    font-family: "Montserrat", sans-serif;
+    padding-left: 18px;
+    padding-top: 20px;
+    resize: none;
 }
 
 .espacio {
@@ -111,26 +116,59 @@ a {
 .LCasilla {
     font-weight: bold;
     font-size: 13px;
+    margin-top: 90px;
 }
 
 .pp {
     text-decoration: none;
     color: #009ddb;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .boton {
     margin-left: 69%;
     border-radius: 30px;
     width: 200px;
-    height: 50px;
+    height: 55px;
     background: linear-gradient(45deg, rgba(0, 0, 255, 0.849), rgb(116, 173, 206));
     color: white;
     font-weight: bold;
     border: none;
+    margin-top: 15px;
 }
 
 .casillas{
-    margin-right: 55px;
+    font-weight: bold;
+    font-size: 11px;
+    color: black;
+    margin-top: 15px;
+    max-width: 90%;
+    margin-right: 9px;
+}
+
+.contenedor-checkbox {
+  position: relative;
+}
+.contenedor-checkbox-input { 
+  margin-right: 10px;
+}
+.asterisco {
+  color: red;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.casilla2{
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+    font-size: 11px;
+    margin-top: 15px;
+}
+
+.linea2{
+    margin-left: 30px;
+    font-size: 10px;
 }
