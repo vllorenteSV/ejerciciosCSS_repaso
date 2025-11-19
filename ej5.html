@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -53,14 +53,21 @@
                 <textarea class="mensaje" name="textarea" placeholder="Mensaje" rows="10" cols="85">  Mensaje*</textarea><br><br>
 
                 <div class="casillas">
-                <input type="checkbox" required><a class="LCasilla"> He leído y acepto la </a><a class="pp"
-                    href="politicaprivacidad.com">Política de privacidad</a>
-                <a class="LCasilla"> del responsable FSV sobre el tratamiento de mis datos<br>
-                    personales con finalidad de atender mi consulta y comunicarse comercialmente por vía
-                    electrónica,</a><br><br>
-                <input type="checkbox"><a class="LCasilla"> Deseo recibir comunicaciones sobre eventos y otra oferta
+                    <div class="contenedor-checkbox">
+                        <input class="contenedor-checkbox-input" type="checkbox" name="politica" id="">
+                        <span class="asterisco">*</span>
+                        <label for="politica">He leido y acepto la <a href="politica.com">la politica</a> </label>del responsable FSV sobre el tratamiento de mis datos<br>
+                        personales con finalidad de atender mi consulta y comunicarse comercialmente por vía
+                        electrónica
+
+                    </div>
+                
+                <div>
+                    <input type="checkbox"><a class="LCasilla"> Deseo recibir comunicaciones sobre eventos y otra oferta
                     formativa de FSV por vía electrónica.
-                </a></div><br><br>
+                        </a>
+                    </div>
+                </div>
 
                 <button class="boton">ENVIAR MENSAJE</button>
 

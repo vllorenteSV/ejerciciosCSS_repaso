@@ -120,3 +120,16 @@ a {
 .casillas{
     margin-right: 55px;
 }
+
+.contenedor-checkbox {
+  position: relative;
+}
+.contenedor-checkbox-input { 
+  margin-right: 15px;
+}
+.asterisco {
+  color: red;
+  position: absolute;
+  top: 7px;
+  left: 25px;
+}
