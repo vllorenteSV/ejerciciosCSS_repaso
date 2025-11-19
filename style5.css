@@ -42,6 +42,10 @@ a {
     justify-content: center;
 }
 
+.NyP::placeholder {
+    font-style: italic;
+}
+
 .NyP {
     margin-top: 30px;
     width: 90%;
@@ -50,8 +54,11 @@ a {
     background-color: rgb(238, 238, 238);
     border-color: white;
     border-radius: 40px;
-    font-style: italic;
     border: none;
+}
+
+.corta::placeholder {
+    font-style: italic;
 }
 
 .corta {
@@ -62,8 +69,11 @@ a {
     background-color: rgb(238, 238, 238);
     border-color: white;
     border-radius: 40px;
-    font-style: italic;
     border: none;
+}
+
+.asunto::placeholder {
+    font-style: italic;
 }
 
 .asunto {
@@ -74,9 +84,14 @@ a {
     background-color: rgb(238, 238, 238);
     border-color: white;
     border-radius: 40px;
-    font-style: italic;
     border: none;
 }
+
+.mensaje::placeholder {
+    color: grey;
+    font-style: italic;
+}
+
 
 .mensaje {
     margin-top: 20px;
@@ -84,9 +99,8 @@ a {
     background-color: rgb(238, 238, 238);
     border-color: white;
     border-radius: 30px;
-    font-style: italic;
     border: none;
-    color: grey;
+    color: black;
 }
 
 .espacio {
@@ -111,7 +125,7 @@ a {
     border-radius: 30px;
     width: 200px;
     height: 50px;
-    background: linear-gradient(45deg, blue, rgb(161, 208, 235));
+    background: linear-gradient(45deg, rgba(0, 0, 255, 0.849), rgb(116, 173, 206));
     color: white;
     font-weight: bold;
     border: none;
