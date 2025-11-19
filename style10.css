@@ -1,0 +1,201 @@
+:root {
+  --color-primary: #ec407a;
+  --color-background: #fff;
+  --color-text-main: #3c4043;
+  --color-text-secondary: #5f6368;
+  --color-border: #dadce0;
+  --color-hover: #f1f3f4;
+  --color-grey-item: #f8f8f8;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0 30px 0;
+}
+
+.create-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Nunito", sans-serif;
+  transition: background-color 0.2s;
+}
+
+.create-btn:hover {
+  background-color: #d81b60; /* Tono más oscuro al hacer hover */
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.header-icons p {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.header-icons .material-icons {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Contenedor principal con Flexbox */
+.container {
+  display: flex;
+}
+
+/* Menú lateral (Sidebar) */
+.sidebar {
+  width: 250px;
+  padding: 90px 0;
+  /* flex-shrink: 0;*/
+}
+
+.sidebar-item {
+  padding: 10px 60px 20px 25px;
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+}
+
+.active-topic {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.main-guide {
+  margin-top: 15px;
+  color: var(--color-text-main);
+  font-weight: 500;
+}
+
+.sidebar hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 10px 20px;
+}
+
+/* Contenido principal (Main Content) */
+.content {
+  flex-grow: 1;
+  padding: 20px 40px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.section-header span {
+  color: var(--color-primary);
+}
+
+.section-header h1 {
+  font-size: 28px;
+  color: var(--color-text-main);
+  font-weight: 400;
+  margin: 0 0 5px 20px;
+}
+
+.section-header .material-icons {
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+
+/* Ítems (Retos/Laboratorios) */
+.item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  transition: background-color 0.2s;
+}
+
+.item:hover {
+  background-color: var(--color-hover);
+}
+
+.item-icon {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.pink-item .item-icon {
+  color: var(--color-primary);
+}
+
+.item-title {
+  flex-grow: 1; /* Ocupa el espacio restante */
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.item-date,
+.item-status {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  white-space: nowrap; /* Evita que la fecha se divida */
+}
+
+.grey-item .item-icon {
+  color: var(--color-text-secondary);
+}
+
+.section-header h1 {
+  color: var(--color-primary);
+}
+
+.more-options {
+  color: var(--color-primary) !important;
+}
+
+.select-input {
+  display: none;
+  width: 100%;
+  padding: 10px 8px;
+  border-radius: 7px;
+}
+@media (max-width: 768px) {
+  aside {
+    display: none;
+  }
+
+  .header-icons p {
+    display: none;
+  }
+
+  .select-input {
+    display: block;
+  }
+}
